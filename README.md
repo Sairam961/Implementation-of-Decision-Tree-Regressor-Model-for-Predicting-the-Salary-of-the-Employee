@@ -10,9 +10,9 @@ To write a program to implement the Decision Tree Regressor Model for Predicting
 ## Algorithm
 1.Load the CSV and separate features (Level) and target (Salary).
 
-2.Fit a DecisionTreeRegressor with a chosen max_depth (e.g., 4).
+2.Fit a DecisionTreeRegressor with a chosen max_depth.
 
-3.Predict salaries on the same levels and compute MSE/R² if desired.
+3.Predict salaries on the same levels.
 
 4.Visualize the trained tree to inspect its splits.
 
@@ -44,10 +44,6 @@ regressor.fit(X, y)
 
 y_pred = regressor.predict(X)
 
-print("MSE:",mean_squared_error(y, y_pred))
-
-print("R squared:",r2_score(y, y_pred))
-
 plt.figure(figsize=(15,8))
 
 plot_tree(regressor, feature_names=["Level"], filled=True, fontsize=8)
@@ -56,8 +52,7 @@ plt.show()
 
 
 ## Output:
-![Decision Tree Regressor Model for Predicting the Salary of the Employee](sam.png)
-
+<img src="ex9 output 1.png" alt="Output" width="500">
 
 ## Result:
 Thus the program to implement the Decision Tree Regressor Model for Predicting the Salary of the Employee is written and verified using python programming.
